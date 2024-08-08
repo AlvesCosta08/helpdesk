@@ -41,4 +41,8 @@ O projeto HelpDesk é uma aplicação de suporte ao cliente desenvolvida para ge
 
    ```bash
    git clone https://github.com/seu-usuario/helpdesk.git
+   
+#### Acompanhamento no Jira 
+- Utilizando Kanban
+https://alvescosta74-1720442219776.atlassian.net/jira/software/projects/HEL/boards/2
 
