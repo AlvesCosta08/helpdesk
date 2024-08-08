@@ -1,6 +1,7 @@
 package com.helpdesk.helpdesk.services;
 
 import com.helpdesk.helpdesk.domain.Tecnico;
+import com.helpdesk.helpdesk.exceptions.ObjectNotFoundException;
 import com.helpdesk.helpdesk.repository.TecnicoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -15,6 +16,6 @@ public class TecnicoService {
 
     public Tecnico findById(Long id){
         Optional<Tecnico> obj = repository.findById(id);
-        return obj.orElse(null);
+        return obj.orElseThrow(()->new ObjectNotFoundException("Objeto não encontrado! Id: " + id));
     }
 }
