@@ -1,7 +1,7 @@
 package com.helpdesk.helpdesk.domain.enums;
 
 public enum Status{
-    ABERTO(0,"ABERTO"),ANDAMENTO(1,"ANDAMENTO"),ENCERRADO(2,"ENCERRADO");
+    ABERTO(0,"ABERTO"),ANDAMENTO(1,"ANDAMENTO"),FINALIZADO(2,"FINALIZADO");
 
     private Integer codigo;
     private String descricao;
